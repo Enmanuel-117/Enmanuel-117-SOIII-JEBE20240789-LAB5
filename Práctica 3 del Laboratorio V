@@ -1,0 +1,6 @@
+sudo apt install keepalived -y
+cd /etc/keepalived/keepalived.conf
+sudo nano /etc/keepalived/keepalived.conf
+sudo systemctl restart keepalived
+sudo systemctl start keepalived
+sudo systemctl enable keepalived
