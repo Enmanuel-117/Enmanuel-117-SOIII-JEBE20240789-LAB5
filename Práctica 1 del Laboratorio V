@@ -1,0 +1,14 @@
+cd Desktop/
+mkdir prueba
+cd prueba/
+for i in {1..100}; do touch archivo$i.txt; done
+rsync -avz /home/cincspar117/Desktop/prueba cincspar117@10.0.0.26:/home/cinspar117/Desktop/prueba/
+cd
+ls 
+sudo nano sincronizar.sh
+sudo chmod +x sincronizar.sh
+crontab -e
+cd /home/cincspar117/Desktop/prueba/
+touch trepasitoconcocacoladeuva.text
+date
+touch trepasitoconcocacoladeuva2222.txt
